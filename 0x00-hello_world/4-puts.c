@@ -1,12 +1,7 @@
 #include <stdio.h>
-
-char message = "Programming is like building a multilingual puzzle"
-
+#include <stdlib.h>
 int main(void)
-
 {
-        puts (message); 
-        
-	return 0;
-
+puts("Programming is like building a multilingual puzzle\n"); 
+return (0);
 }
