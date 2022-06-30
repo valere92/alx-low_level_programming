@@ -1,4 +1,7 @@
 #include <stdio.h>
+/**
+ *this function pint a message
+ */
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
