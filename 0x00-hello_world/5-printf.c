@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
- *this function print a message
+ * main - Print a string
+ * Description : use Printf
+ * Return : 0 if success
  */
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
 }
-/**
- * return 0 if is success
- */
