@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
  *main - inter point
  *Description: print a random number and tell if is positive or negative
