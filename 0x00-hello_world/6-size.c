@@ -1,0 +1,23 @@
+#include <stdio.h>
+/**
+  *main - enter point
+  *Return: 0 as success
+  */
+
+int main(void)
+{
+
+	int i;
+	long int I;
+	long long int II;
+	float d;
+	char c;
+
+	printf("size of a char: %u byte(s)\n", sizeof(c));
+	printf("size of an int: %u byte(s)\n", sizeof(i));
+	printf("size of a long int: %u byte(s)\n", sizeof(I));
+	printf("size of a long long int: %u byte(s)\n", sizeof(II));
+	printf("size of a float: %u bytes(s)\n", sizeof(d));
+
+	return (0);
+}
