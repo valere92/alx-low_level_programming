@@ -1,14 +1,12 @@
-#include "0-putchar.h"
-
-/**
- * main - inter point; print "_putchar"
- * Return: 0 as success
+#include "main.h"
+/*
+ * main - inter point
+ * Return 0 as success
  */
-
 int main(void)
 {
-	print_putchar();
 
+	print_alphabet();
 	return (0);
 
 }

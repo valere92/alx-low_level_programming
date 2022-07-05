@@ -1,4 +1,4 @@
-#include "2-print_alphabet_x10.h"
+#include "main.h"
 /**
  * main - inter point, print alphabet in lowercase
  * Return: 0 as success
