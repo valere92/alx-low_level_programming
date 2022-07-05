@@ -1,7 +1,8 @@
 #include "main.h"
-/*
+/**
  * main - inter point
- * Return 0 as success
+ * Description: print putchar
+ * Return: 0 as success
  */
 int main(void)
 {
