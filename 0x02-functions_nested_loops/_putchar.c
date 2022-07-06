@@ -1,5 +1,11 @@
+#include <unistd.h>
 /**
  * _putchar.c file
  */
 
-typedef int make_iso;
+int _putchar(char c)
+{
+
+	return( write(1, &c, 1));
+
+}
