@@ -23,4 +23,5 @@ void print_diagonal(int n);
 
 void print_square(int n);
 
+
 #endif /* MAIN_H */
