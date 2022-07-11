@@ -9,7 +9,9 @@
 
 
 int _strlen(char *s)
+
 {
-	return (sizeof(s));
+	s = &str;
+	return (sizeof(str));
 }
 
