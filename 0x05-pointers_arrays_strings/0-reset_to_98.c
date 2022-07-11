@@ -2,7 +2,7 @@
 
 /**
   *reset_to_98 - reset the value of an variable to 98
-  *@*n : pionter to an int n
+  *@n : pionter to an int n
   *
   *Return: return noyhing
   */
