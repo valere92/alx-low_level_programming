@@ -10,13 +10,12 @@
 void rev_string(char *s)
 {
 	int i;
-	char *str[560];
+
 
 	for (i = 0; i < _strlen(s); i++)
 	{
-		str[i] = s[_strlen(s) - i];
+		*(s + i) = *(s + _strlen(s) - i);
 	}
-	*s = str;
 }
 
 /**
