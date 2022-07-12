@@ -9,13 +9,16 @@
 
 void rev_string(char *s)
 {
-	int i;
+	int i, n;
+	char *trans
 
 
 	for (i = 0; i < _strlen(s); i++)
 	{
-		*(s + i) = *(s + _strlen(s) - i);
-	}
+		n =  _strlen(s) - i;
+		trans[i] = s[n];
+	}	
+	s = &trans;
 }
 
 /**
