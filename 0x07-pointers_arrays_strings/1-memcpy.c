@@ -16,8 +16,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	unsigned int j = 0;
 
 
-	while (dest[i] != '\0')
-		i++;
+	/*
+	   *while (dest[i] != '\0')
+	*	i++;
+	 */
 
 	while (j < n)
 	{
