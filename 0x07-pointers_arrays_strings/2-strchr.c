@@ -22,13 +22,10 @@ char *_strchr(char *s, char c)
 		{
 			j++;
 			break;
-			
 		}
-		
 	}
 	if (j == 0)
-        	return ('\0');
+		return ('\0');
 
-	
 	return (&s[j - 1]);
 }
