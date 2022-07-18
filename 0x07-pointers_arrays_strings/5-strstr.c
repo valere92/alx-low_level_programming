@@ -12,19 +12,22 @@ include "main.h"
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
-	{
-		char *src = haystack;
-		char *sub = needle;
-
-		while (*haystack && *sub && *haystack == *sub)
-		{
-			haystack++;
-			sub++;
-		}
-		if (!*sub)
-			return (src);
-		haystack = src + 1;
-	}
-	return (0);
+int i = 0, j, c;
+while (*(haystack + i) != '\0')
+{
+c = i;
+j = 0;
+while (*(needle + j) == *(haystack + i) && *(haystack + i) != '\0' &&
+*(haystack + i) != '\0')
+{
+i++;
+j++;
+}
+if (*(needle + j) == '\0')
+{
+return (haystack + c);
+}
+i = c + 1;
+}
+return (0);
 }
