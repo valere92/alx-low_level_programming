@@ -1,32 +1,27 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- *_strchr - locates a character in a string
- *@s : the string where the character is find
- *@c : the character that is find
+ * _strchr - Loctes a character in a string
  *
- *Return: the adress to the character
+ * @s: The string to check
+ *
+ * @c: The character to find
+ *
+ * Return: Pointer to @s or NULL
+ *
  */
-
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	int j;
-	int count = 0;
-
-	while (s[i] != '\0')
-		i++;
-	for (j = 0; j < i; j++)
+	while (*s)
 	{
-		if (s[j] == c)
+		s++;
+
+		if (*s == c)
 		{
-			count++;
-			break;
+			return (s);
 		}
 	}
-	if (count == 0)
-		return (0);
 
-	return (&s[j]);
+	return (0);
 }
