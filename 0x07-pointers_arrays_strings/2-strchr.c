@@ -5,7 +5,7 @@
  *@s : the string where the character is find
  *@c : the character that is find
  *
- *Return the adress to the character
+ *Return: the adress to the character
  */
 
 
@@ -26,7 +26,7 @@ char *_strchr(char *s, char c)
 		}
 	}
 	if (count == 0)
-		return ('\0');
+		return (0);
 
 	return (&s[j]);
 }
