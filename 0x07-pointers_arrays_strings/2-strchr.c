@@ -18,11 +18,17 @@ char *_strchr(char *s, char c)
 		i++;
 	for (j = 0; j < i; j++)
 	{
-		if (s[j] != c)
+		if (s[j] == c)
 		{
 			j++;
 			break;
+			
 		}
+		
+	}
+	if (j == 0)
+        	return ('\0');
 
+	
 	return (&s[j - 1]);
 }
