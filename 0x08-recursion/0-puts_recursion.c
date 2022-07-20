@@ -11,7 +11,7 @@
 void _puts_recursion(char *s)
 {
 	int j = 0;
-	int n =
+
 
 	if (s[j] != '\0')
 	{
