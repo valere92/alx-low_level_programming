@@ -14,12 +14,12 @@ void _puts_recursion(char *s)
 
 	_putchar(s[j]);
 	j++;
-	
+
 	if (s[j - 1] == '\0')
 		_putchar('\n');
 
 	if (s[j - 1] != '\0')
-		_puts_recursion(&s[j]);
+		_puts_recursion(&s[j - 1]);
 
 }
 
