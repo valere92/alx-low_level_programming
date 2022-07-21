@@ -19,4 +19,6 @@ int is_prime_number(int n);
 
 int sqrt_check(int g, int c);
 
+int prime_check(int f, int p)
+
 #endif
