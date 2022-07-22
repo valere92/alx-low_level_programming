@@ -10,7 +10,7 @@
   *Return: zero as success
   */
 
-int main(int argc, char *argv[])
+int main(int argc _attribute_((unused))_, char *argv[])
 {
 	printf("%s\n", argv[0]);
 
