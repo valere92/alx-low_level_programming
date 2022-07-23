@@ -16,9 +16,9 @@
 int main(int argc, char *argv[])
 {
 	int i = 1;
-	int som = 0; 
+	int som = 0;
 	int l;
-	long unsigned int j;
+	unsigned long int j;
 
 	if (argc == 1)
 	{
