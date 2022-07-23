@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
   *main - enter point, print the program name.
@@ -13,7 +15,10 @@
 
 int main(int argc, char *argv[])
 {
-	int i, som, l;
+	int i = 1;
+	int som = 0; 
+	int l;
+	long unsigned int j;
 
 	if (argc == 1)
 	{
@@ -21,18 +26,21 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 1; i < argc; i++)
+	while (i < argc)
 	{
 		l = atoi(argv[i]);
-		if (l > 1)
+		som += l;
+
+		for (j = 0; j < strlen(argv[i]); j++)
 		{
-			som += l;
+
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		i++;
 	}
 	printf("%d\n", som);
 	return (0);
