@@ -1,58 +1,20 @@
 #include "main.h"
-#include <unistd.h>
-
-void print_array_elements(char *str);
+#include <stdio.h>
 
 /**
- * main - Prints all arguments it receives
- *
- * @argc: Length of @argv, integer
- *
- * @argv: Array of strings of the arguments of this program
- *
- * Return: 0, success
- */
+  *main - enter point
+  *@argc : number of arguments
+  *@argv : pointer to a pointer
+  *
+  *Return: zero as success
+  */
 
 int main(int argc, char *argv[])
 {
 	int i;
 
 	for (i = 0; i < argc; i++)
-	{
-		print_array_elements(argv[i]);
-		_putchar('\n');
-	}
+		printf("%s\n", argv[i]);
 
 	return (0);
-}
-
-/**
- * print_array_elements - Prints all char of a string
- *
- * @str: Pointer to string
- *
- * Return: void
- */
-
-void print_array_elements(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++;
-	}
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
