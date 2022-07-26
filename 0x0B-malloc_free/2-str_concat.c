@@ -22,11 +22,11 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i <= strlen(s1); i++)
 
-		s[i] = s1[i];
+		s[i] = *(s1 + i);
 
 	for (j = 0; j <= strlen(s2); j++, i++)
 	{
-		s[i] = s2[j];
+		s[i] = *(s2 + j);
 		
 	}
 
