@@ -18,8 +18,8 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	p = malloc(sizeof(char) * height);
-	s = malloc(sizeof(char) * width);
+	p = malloc(sizeof(int) * height);
+	s = malloc(sizeof(int) * width);
 
 	if (p == NULL || s == NULL)
 	{
