@@ -6,8 +6,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	unsigned long int i; 
-	int j, l, k;
+	unsigned long int i, j; 
+	int l;
 
 	k = 0;
 	l = strlen(s1) + strlen(s2);
@@ -24,10 +24,10 @@ char *str_concat(char *s1, char *s2)
 
 		s[i] = s1[i];
 
-	for (j = i + 1; j <= l; j++)
+	for (j = 0; j <= strlen(s2); j++, i++)
 	{
-		s[j] = s2[k];
-		k++;
+		s[i] = s2[j];
+		
 	}
 
 	s[l + 1] = '\0';
