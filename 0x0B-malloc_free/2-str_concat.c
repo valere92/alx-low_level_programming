@@ -9,7 +9,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned long int i, j; 
 	int l;
 
-	k = 0;
+
 	l = strlen(s1) + strlen(s2);
 
 	s = malloc(sizeof(char) * (l + 1));
