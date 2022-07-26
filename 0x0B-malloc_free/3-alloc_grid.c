@@ -11,8 +11,8 @@
 
 int **alloc_grid(int width, int height)
 {
-	char **p;
-	char *s;
+	int **p;
+	int *s;
 	int i, j;
 
 	if (width <= 0 || height <= 0)
@@ -31,5 +31,5 @@ int **alloc_grid(int width, int height)
 			p[i] = &s[j];
 		}
 
-	return (p)
+	return (p);
 }
