@@ -6,7 +6,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int i, j, l, k;
+	unsigned long int i; 
+	int j, l, k;
 
 	k = 0;
 	l = strlen(s1) + strlen(s2);
