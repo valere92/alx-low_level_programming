@@ -20,8 +20,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc(nmemb * size);
 
 	if (p == NULL)
+	{
 		free(p);
 		return (NULL);
+	}
 
 	return (p);
 }
