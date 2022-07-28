@@ -18,6 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned long int i;
 	unsigned int j;
 
+	if (strcmp(s1, NULL) == 0)
+		*s1 = '\0';
+
+	if (strcmp(s2, NULL) == 0)
+		*s2 = '\0';
 
 	l = strlen(s1) + n;
 
