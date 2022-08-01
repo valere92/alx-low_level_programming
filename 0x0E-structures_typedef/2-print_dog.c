@@ -6,7 +6,7 @@
   *print_dog - print the structure dog
   *@d : pointer to structure dog
   *
-  *Return: void
+  *Return: void / nothing
   */
 
 void print_dog(struct dog *d)
