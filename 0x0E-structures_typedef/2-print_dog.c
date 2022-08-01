@@ -11,7 +11,6 @@
 
 void print_dog(struct dog *d)
 {
-	char nothing[] = {'\0'};
 
 	if (d)
 	{
@@ -33,6 +32,5 @@ void print_dog(struct dog *d)
 			printf("Owner: %s\n", (*d).owner);
 	}
 
-	if (!d)
-		printf("%s\n", nothing);
+
 }
