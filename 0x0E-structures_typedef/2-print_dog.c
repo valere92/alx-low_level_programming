@@ -11,6 +11,8 @@
 
 void print_dog(struct dog *d)
 {
+	char nothing[] = {'\0'};
+
 	if (d)
 	{
 		if ((*d).name == NULL)
@@ -32,5 +34,5 @@ void print_dog(struct dog *d)
 	}
 
 	if (!d)
-		printf("\n");
+		printf("%s\n", nothing);
 }
