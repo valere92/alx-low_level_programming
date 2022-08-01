@@ -73,3 +73,22 @@ int _strLen(char *str)
 	return (i);
 }
 
+/**
+ * fillMem - Copy string literal to allocated memory
+ *
+ * @str: String literal
+ *
+ * @strLen: @str length
+ *
+ * @dest: The allocated memory
+ */
+
+void fillMem(char *str, int strLen, char *dest)
+{
+	int i;
+
+	for (i = 0; i < strLen; i++)
+		dest[i] = str[i];
+
+	dest[i] = '\0';
+}
