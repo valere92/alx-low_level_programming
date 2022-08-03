@@ -18,6 +18,8 @@ void f(char *name)
 
 	for (i = 0; i < l; i++)
 		_putchar(name[i]);
+	
+	_putchar('\n');
 
 }
 
