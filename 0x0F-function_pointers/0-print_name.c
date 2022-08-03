@@ -11,11 +11,12 @@
 void f(char *name)
 {
 	int l = 0;
+	int i, j = 0;
 
-	while (name != '\0')
+	while (name[j] != '\0')
 		l++;
 
-	for (int i = 0; i < l; i++)
+	for (i = 0; i < l; i++)
 		_putchar(name[i]);
 
 }
@@ -31,7 +32,7 @@ void f(char *name)
 void print_name(char *name, void (*f)(char *))
 {
 
-	(*f)();
+	(*f)(name);
 
 }
 
