@@ -7,4 +7,6 @@ int _putchar(char c);
 
 void f(char *);
 
+void array_iterator(int *array, size_t size, void (*action)(int));
+
 #endif
