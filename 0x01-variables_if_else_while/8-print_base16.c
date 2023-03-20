@@ -9,7 +9,7 @@
 int main(void)
 {
 
-	int ch = '1';
+	int ch = '0';
 	int ch2 = 'a';
 
 	while (ch <= '9')
